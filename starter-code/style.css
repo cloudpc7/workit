@@ -7,4 +7,73 @@
 
 body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 90rem;
+    position: relative;
+}
+
+.svg {
+    width: 100%;
+    position: absolute;
+}
+
+.nav {
+    background-color: #000;
+    z-index: 2;
+    position: absolute;
+}
+
+
+.left-spring {
+    position: absolute;
+    top: 7rem;
+    left: -7rem;
+}
+
+.right-spring {
+    position: absolute;
+    top: 20rem;
+    right: -3rem;
+}
+
+
+.nav {
+    width: 90rem;
+    z-index: 2;
+}
+
+.access {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 177.778%;
+    letter-spacing: -0.01125rem;
+    color: #fff;
+    text-decoration-color: #44FFA1;
+}
+
+
+.title {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 100%;
+    color: #fff;
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: #44FFA1;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.01125rem;
+}
+
+.phone {
+    max-width: 44rem;
 }
