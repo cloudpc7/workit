@@ -10,36 +10,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .container {
-    display: flex;
     max-width: 90rem;
-    padding: 0 10rem;
-}
-.header {
-    height: 45.625rem;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    gap: 20rem;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.svg {
+    position: absolute;
+    z-index: -1;
+}
+
+.svg-2 {
+    position: absolute;
+    top: 41rem;
+    z-index: -2;
+}
+
+/* hero section  */
+
+.hero {
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
     margin-bottom: 3rem;
     padding: 0 10rem;
-}
-
-.svg {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .left-spring {
@@ -71,6 +80,10 @@ body {
 
 .hero-title {
     max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -83,7 +96,7 @@ body {
 }
 
 .btn {
-    min-width: 10rem;
+    width: 10rem;
     height: 3rem;
     border: none;
     background-color: #44FFA1;
@@ -96,5 +109,108 @@ body {
     max-width: 44rem;
     position: absolute;
     top: 28rem;
-    z-index: 2;
+}
+
+
+/* content section  */
+
+.content {
+    max-height: 46rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 0 10rem;
+}
+
+.content-action {
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.action-number {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #584D62;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.action-title, .action-info {
+    color: #24053E;
+}
+
+.action-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.action-info {
+    font-size: 1.125rem;
+    line-height: 177.78%;
+}
+
+/* about card section */
+
+.about-card {
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10rem;
+}
+
+.founder {
+    max-width: 30rem;
+    max-height: 30rem;
+}
+
+.greeting {
+    width: 46rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    position: absolute;
+    top: 11rem;
+    left: 34rem;
+    padding: 0 4rem;
+    background-color: #24053E;
+}
+
+.greeting-title, .about {
+    color: #fff;
+}
+
+.greeting-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 114.286%;
+}
+
+.about {
+    font-size: 1.125rem;
+    line-height: 1.77.78%;
+}
+
+.footer {
+    height: 6rem;
+    width:7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 6rem 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content:space-between;
 }
