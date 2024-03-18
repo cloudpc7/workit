@@ -17,7 +17,7 @@ body {
     max-width: 90rem;
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    gap: 6.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -29,7 +29,7 @@ body {
 
 .svg-2 {
     position: absolute;
-    top: 41rem;
+    top: 35rem;
     z-index: -2;
 }
 
@@ -163,6 +163,7 @@ body {
     height: 39rem;
     display: flex;
     flex-direction: column;
+    margin-top: 20rem;
     position: relative;
     padding: 0 10rem;
 }
