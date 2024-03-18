@@ -13,21 +13,34 @@ body {
 }
 
 .container {
+    display: flex;
     max-width: 90rem;
-    position: relative;
+    padding: 0 10rem;
 }
-
-.svg {
-    width: 100%;
-    position: absolute;
+.header {
+    height: 45.625rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    overflow:hidden;
 }
 
 .nav {
-    background-color: #000;
-    z-index: 2;
-    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    padding: 0 10rem;
 }
 
+.svg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .left-spring {
     position: absolute;
@@ -56,8 +69,13 @@ body {
     text-decoration-color: #44FFA1;
 }
 
+.hero-title {
+    max-width: 40rem;
+}
+
 
 .title {
+    margin-bottom: 2rem;
     font-size: 5rem;
     font-weight: 600;
     line-height: 100%;
@@ -65,7 +83,7 @@ body {
 }
 
 .btn {
-    width: 10rem;
+    min-width: 10rem;
     height: 3rem;
     border: none;
     background-color: #44FFA1;
@@ -76,4 +94,7 @@ body {
 
 .phone {
     max-width: 44rem;
+    position: absolute;
+    top: 28rem;
+    z-index: 2;
 }
