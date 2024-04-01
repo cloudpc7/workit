@@ -259,6 +259,7 @@ a:hover {
 @media screen and (min-width: 90rem) {
   header {
     width: 90rem;
+    padding: 0 10.31rem 0 10.33rem;
   }
 
   .container {
