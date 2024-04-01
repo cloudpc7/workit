@@ -14,55 +14,63 @@
 </head>
 
 <body>
-  <main class="container">
-    <picture class="purple-background-pattern">
-      <source media="(min-width:90rem)" srcset="./assets/bg-pattern-3.svg">
-      <img src="./assets/background.svg"/>
-    </picture>
-    <picture class="light-background-pattern">
-      <source media="(min-width:90rem)" srcset="./assets/bg-pattern-4.svg">
+  <picture class="hero-wave">
+    <source media="(min-width: 90rem)" srcset="./assets/background-big.svg">
+    <source media="(min-width: 48rem)" srcset="./assets/background-dark.svg">
+    <img src="./assets/background.svg" />
+  </picture>
+  <picture class="hero-wave-light">
+      <source media="(min-width: 90rem)" srcset="./assets/background-light-big.svg">
+      <source media="(min-width: 48rem)" srcset="./assets/background-light.svg">
       <img src="./assets/backgroundpurple.svg"/>
     </picture>
-    <section class="hero">
-      <img class="left-spring" alt="spring" src="./assets/images/bg-pattern-1.svg"/>
-      <img class="right-spring" alt="spring" src="./assets/images/bg-pattern-2.svg"/>
-      <div class="nav">
-        <img  class="logo" src="./assets/images/logo-light.svg"/>
-        <a class="access" href="#">Apply for access</a>
-      </div>
-      <div class="hero-title">
-        <h1 class="title">Data <u class="tailor">tailored</u> to your needs.</h1>
-        <button class="btn">Learn more</button>
-      </div>
-      <img class="phone" alt="phone" src="./assets/images/image-hero.webp"/>
-    </section>
-    <section class="data-content">
+  <header>
+    <img class="left-spring" src="./assets/images/bg-pattern-1.svg" alt="spring" />
+    <img class="right-spring" src="./assets/images/bg-pattern-2.svg" alt="spring" />
+    <div class="nav">
+      <img class="logo" src="./assets/images/logo-light.svg" alt="workit" />
+      <a href="#">Apply for access</a>
+    </div>
+    <div class="hero-content">
+      <h1 class="title">Data <u class="tailor">tailored</u> to your needs</h1>
+      <button class="btn">Learn more</button>
+    </div>
+    <img  class="phone" src="./assets/images/image-hero.webp" alt="phone"/>
+    </header>
+  <main class="container">
+    <section class="feature-content">
       <div class="data">
         <div class="number">1</div>
-        <p class="data-title">Actionable insights</p>
-        <p class="data-info">
-          Optimize your products, improve customer satisfaction
-          and stay ahead of the competition with our product data analytics.
-        </p>
+        <div class="data-content">
+          <p class="data-title">Actionable insights</p>
+          <p class="data-info">
+            Optimize your products, improve customer satisfaction
+            and stay ahead of the competition with our product data analytics.
+          </p>
+        </div>
       </div>
       <div class="data">
         <div class="number">2</div>
-        <p class="data-title">Data-driven decisions</p>
-        <p class="data-info">
-          Make data-driven decisions with our product data analytics.
-          Our AI-generated reports help you unlock insights hidden in your product data.
-        </p>
+        <div class="data-content">
+          <p class="data-title">Data-driven decisions</p>
+          <p class="data-info">
+            Make data-driven decisions with our product data analytics.
+            Our AI-generated reports help you unlock insights hidden in your product data.
+          </p>
+        </div>
       </div>
       <div class="data">
         <div class="number">3</div>
-        <p class="data-title">Always affordable</p>
-        <p class="data-info">
-          Always affordable pricing that scales with your business. Get top-quality
-          product data analytics services without hidden costs or unexpected fees.
-        </p>
+        <div class="data-content">
+          <p class="data-title">Always affordable</p>
+          <p class="data-info">
+            Always affordable pricing that scales with your business. Get top-quality
+            product data analytics services without hidden costs or unexpected fees.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="about">
+    <div class="about">
       <img class="founder" src='./assets/images/image-founder.webp' alt="founder">
       <div class="about-founder">
         <h2 class="founder-title">Be the first to test</h2>
@@ -71,17 +79,19 @@
           to become a beta tester for our app and kickstart your company. Apply for access
           below and I’ll be in touch to schedule a call.
         </p>
-        <button class="apply-btn">Apply for access</button>
+        <button class="btn">Apply for access</button>
+        <img class="spring" src="./assets/images/bg-pattern-3.svg" alt="spring"/>
       </div>
-    </section>
-    <section class="social-media">
-      <img class="logo"src="./assets/images/logo-dark.svg" alt='workit'/>
-      <div class="social-icons">
-        <img  class="social" src="./assets/images/icon-facebook.svg" alt="facebook"/>
-        <img class="social" src="./asseets/images/icon-twitter.svg" alt="twitter"/>
-        <img class="social" src="./assets/images/icon-instagram.svg" alt="instagram"/>
-      </div>
-    </section>
+    </div>
   </main>
+  <div class="social-media">
+    <img class="logo"src="./assets/images/logo-dark.svg" alt='workit'/>
+    <div class="social-icons">
+      <img  class="social" src="./assets/images/icon-facebook.svg" alt="facebook"/>
+      <img class="social" src="./assets/images/icon-twitter.svg" alt="twitter"/>
+      <img class="social" src="./assets/images/icon-instagram.svg" alt="instagram"/>
+    </div>
+  </div>
 </body>
+
 </html>
